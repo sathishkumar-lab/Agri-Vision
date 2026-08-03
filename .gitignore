@@ -14,3 +14,10 @@ uploads/
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# Colab dataset
+wheat_leaf/
+
+# Generated image files
+backend/uploads/
+backend/processed_images/
