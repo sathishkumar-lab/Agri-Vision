@@ -1,132 +1,193 @@
-from io import BytesIO
 from pathlib import Path
 from uuid import uuid4
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
-from PIL import Image, UnidentifiedImageError
 
+from app.services.prediction_service import predict_image
 from app.utils.image_processing import process_image
 
 
 app = FastAPI(
     title="Agri-Vision API",
-    description="Backend API for crop image analysis.",
-    version="0.3.0",
+    description=(
+        "Backend API for wheat image upload, preprocessing, "
+        "disease prediction, and crop insurance claim verification."
+    ),
+    version="1.0.0",
 )
 
 
-UPLOAD_FOLDER = Path("uploads")
-UPLOAD_FOLDER.mkdir(parents=True, exist_ok=True)
+# Maximum permitted upload size: 10 MB.
+MAX_FILE_SIZE = 10 * 1024 * 1024
 
-ALLOWED_IMAGE_TYPES = {
+# MIME types accepted by the API.
+ALLOWED_CONTENT_TYPES = {
     "image/jpeg",
     "image/png",
 }
 
-MAX_FILE_SIZE = 10 * 1024 * 1024
+# File extensions accepted by the API.
+ALLOWED_EXTENSIONS = {
+    ".jpg",
+    ".jpeg",
+    ".png",
+}
+
+
+# Find the backend folder from the location of this file.
+BACKEND_FOLDER = Path(__file__).resolve().parents[1]
+
+# Folder used to store original uploaded images.
+UPLOAD_FOLDER = BACKEND_FOLDER / "uploads"
+
+# Create the uploads folder automatically if it does not exist.
+UPLOAD_FOLDER.mkdir(parents=True, exist_ok=True)
 
 
 @app.get("/")
 def home() -> dict:
+    """
+    Check whether the Agri-Vision backend is running.
+    """
+
     return {
-        "message": "Welcome to Agri-Vision API",
-        "module": "Module 3 - Image Preprocessing",
+        "message": "Welcome to the Agri-Vision API",
+        "status": "running",
     }
 
 
-@app.post("/upload")
+@app.get("/health")
+def health_check() -> dict:
+    """
+    Return a simple backend health response.
+    """
+
+    return {
+        "status": "healthy",
+        "service": "Agri-Vision API",
+    }
+
+
+@app.post("/upload-image")
 async def upload_image(
     file: UploadFile = File(...),
 ) -> dict:
-    if file.content_type not in ALLOWED_IMAGE_TYPES:
+    """
+    Upload, validate, preprocess, and analyse one wheat-leaf image.
+    """
+
+    # Check the MIME type supplied with the uploaded file.
+    if file.content_type not in ALLOWED_CONTENT_TYPES:
         raise HTTPException(
             status_code=400,
-            detail="Only JPG, JPEG and PNG images are allowed.",
+            detail="Only JPG, JPEG, and PNG images are allowed.",
         )
 
+    original_filename = file.filename or "uploaded_image.jpg"
+
+    # Get the extension, such as .jpg or .png.
+    file_extension = Path(original_filename).suffix.lower()
+
+    if file_extension not in ALLOWED_EXTENSIONS:
+        raise HTTPException(
+            status_code=400,
+            detail="The file must have a .jpg, .jpeg, or .png extension.",
+        )
+
+    # Read the uploaded file as bytes.
     file_content = await file.read()
 
+    if not file_content:
+        raise HTTPException(
+            status_code=400,
+            detail="The uploaded image is empty.",
+        )
+
+    # Check whether the uploaded image exceeds 10 MB.
     if len(file_content) > MAX_FILE_SIZE:
         raise HTTPException(
             status_code=400,
             detail="Image size must not exceed 10 MB.",
         )
 
-    if len(file_content) == 0:
-        raise HTTPException(
-            status_code=400,
-            detail="The uploaded file is empty.",
-        )
-
     try:
-        with Image.open(BytesIO(file_content)) as image:
-            image.verify()
-
-        with Image.open(BytesIO(file_content)) as image:
-            original_width = image.width
-            original_height = image.height
-            original_format = image.format
-
-    except UnidentifiedImageError as error:
-        raise HTTPException(
-            status_code=400,
-            detail="The uploaded file is not a valid image.",
-        ) from error
-
-    except OSError as error:
-        raise HTTPException(
-            status_code=400,
-            detail="The uploaded image is damaged or unreadable.",
-        ) from error
-
-    original_extension = (
-        Path(file.filename or "uploaded_image").suffix.lower()
-    )
-
-    if original_extension not in {".jpg", ".jpeg", ".png"}:
-        original_extension = (
-            ".png"
-            if file.content_type == "image/png"
-            else ".jpg"
-        )
-
-    stored_filename = (
-        f"{uuid4().hex}{original_extension}"
-    )
-
-    original_file_path = (
-        UPLOAD_FOLDER / stored_filename
-    )
-
-    original_file_path.write_bytes(file_content)
-
-    try:
+        # Module 3:
+        # Open the image, correct its orientation, convert it to RGB,
+        # resize it to 224 × 224, and save the processed image.
         processed_image = process_image(
             file_content=file_content,
-            original_filename=file.filename or stored_filename,
+            original_filename=original_filename,
         )
 
     except ValueError as error:
-        original_file_path.unlink(missing_ok=True)
-
         raise HTTPException(
             status_code=400,
             detail=str(error),
         ) from error
 
+    # Generate a unique name for the original uploaded image.
+    stored_filename = (
+        f"{Path(original_filename).stem}_"
+        f"{uuid4().hex}"
+        f"{file_extension}"
+    )
+
+    original_image_path = UPLOAD_FOLDER / stored_filename
+
+    try:
+        # Save the original uploaded image.
+        original_image_path.write_bytes(file_content)
+
+    except OSError as error:
+        raise HTTPException(
+            status_code=500,
+            detail="The original image could not be saved.",
+        ) from error
+
+    # process_image() returns a path such as:
+    # processed_images/example_123.jpg
+    processed_image_path = Path(
+        processed_image["processed_path"]
+    ).resolve()
+
+    try:
+        # Module 4:
+        # Send the processed 224 × 224 image to the trained model.
+        prediction_result = predict_image(
+            processed_image_path
+        )
+
+    except (FileNotFoundError, ValueError, OSError) as error:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Image prediction failed: {error}",
+        ) from error
+
+    except Exception as error:
+        raise HTTPException(
+            status_code=500,
+            detail="An unexpected error occurred during prediction.",
+        ) from error
+
     return {
         "message": (
-            "Image uploaded, validated and "
-            "processed successfully"
+            "Image uploaded, processed, and analysed successfully"
         ),
         "original_image": {
-            "original_filename": file.filename,
+            "original_filename": original_filename,
             "stored_filename": stored_filename,
             "image_type": file.content_type,
-            "image_format": original_format,
-            "width": original_width,
-            "height": original_height,
             "size_bytes": len(file_content),
         },
-        "processed_image": processed_image,
+        "processed_image": {
+            "stored_filename": (
+                processed_image["processed_filename"]
+            ),
+            "width": processed_image["width"],
+            "height": processed_image["height"],
+            "image_mode": processed_image["image_mode"],
+            "image_format": processed_image["image_format"],
+        },
+        "prediction": prediction_result["prediction"],
+        "confidence": prediction_result["confidence"],
     }
