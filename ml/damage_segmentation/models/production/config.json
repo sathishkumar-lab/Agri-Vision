@@ -1,0 +1,22 @@
+{
+  "data_provenance": "real_world",
+  "class_mapping": {
+    "0": "background",
+    "1": "healthy_wheat_crop",
+    "2": "damaged_wheat_crop"
+  },
+  "input_size": [
+    256,
+    256
+  ],
+  "normalization": "rgb_float32_divide_255",
+  "architecture": "residual_unet",
+  "loss": "dice_cce",
+  "seed": 2026,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "epochs_completed": 25,
+  "parameters": 2034851,
+  "training_seconds": 1113.88,
+  "manifest": "D:\\Agri-Vision\\ml\\damage_segmentation\\datasets\\real_world\\split_manifest.json"
+}
