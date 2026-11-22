@@ -1,0 +1,322 @@
+[
+  {
+    "id": "7a9c6a53-2ec7-460b-a185-d1094c2f8ff9",
+    "observation_id": "3c1d413d-2362-4188-a815-e308c6e76644",
+    "image_path": "/uploads/observations/3c1d413d-2362-4188-a815-e308c6e76644/zone_1_close_up_1.jpg",
+    "image_type": "close_up",
+    "observation_zone": "zone_1",
+    "original_filename": "close_z1.jpg",
+    "uploaded_at": "2026-09-22T16:02:03.250062+00:00",
+    "disease_prediction": {
+      "prediction": "stripe_rust",
+      "confidence": 43.51
+    },
+    "damage_prediction": null
+  },
+  {
+    "id": "f984e5cf-0a22-4f95-a554-ebfa0c27a899",
+    "observation_id": "3c1d413d-2362-4188-a815-e308c6e76644",
+    "image_path": "/uploads/observations/3c1d413d-2362-4188-a815-e308c6e76644/zone_1_field_view_2.jpg",
+    "image_type": "field_view",
+    "observation_zone": "zone_1",
+    "original_filename": "field_z1.jpg",
+    "uploaded_at": "2026-09-22T16:02:03.250062+00:00",
+    "disease_prediction": null,
+    "damage_prediction": {
+      "damage_percentage": 0.0,
+      "damaged_pixels": 0,
+      "healthy_pixels": 50176,
+      "background_pixels": 0,
+      "mask_path": "D:\\Agri-Vision\\backend\\damage_results\\masks\\obs_3c1d413d_zone_1_field_view_damage_mask.png",
+      "overlay_path": "D:\\Agri-Vision\\backend\\damage_results\\overlays\\obs_3c1d413d_zone_1_field_view_damage_overlay.jpg"
+    }
+  },
+  {
+    "id": "c2cc834f-db62-472e-a01c-eb6dc85d2385",
+    "observation_id": "3c1d413d-2362-4188-a815-e308c6e76644",
+    "image_path": "/uploads/observations/3c1d413d-2362-4188-a815-e308c6e76644/zone_2_close_up_3.jpg",
+    "image_type": "close_up",
+    "observation_zone": "zone_2",
+    "original_filename": "close_z2.jpg",
+    "uploaded_at": "2026-09-22T16:02:03.250062+00:00",
+    "disease_prediction": {
+      "prediction": "stripe_rust",
+      "confidence": 43.51
+    },
+    "damage_prediction": null
+  },
+  {
+    "id": "971d8f9e-1fdb-4027-b9ac-fefb1f61e188",
+    "observation_id": "3c1d413d-2362-4188-a815-e308c6e76644",
+    "image_path": "/uploads/observations/3c1d413d-2362-4188-a815-e308c6e76644/zone_2_field_view_4.jpg",
+    "image_type": "field_view",
+    "observation_zone": "zone_2",
+    "original_filename": "field_z2.jpg",
+    "uploaded_at": "2026-09-22T16:02:03.250062+00:00",
+    "disease_prediction": null,
+    "damage_prediction": {
+      "damage_percentage": 0.0,
+      "damaged_pixels": 0,
+      "healthy_pixels": 50176,
+      "background_pixels": 0,
+      "mask_path": "D:\\Agri-Vision\\backend\\damage_results\\masks\\obs_3c1d413d_zone_2_field_view_damage_mask.png",
+      "overlay_path": "D:\\Agri-Vision\\backend\\damage_results\\overlays\\obs_3c1d413d_zone_2_field_view_damage_overlay.jpg"
+    }
+  },
+  {
+    "id": "60eddb50-52ca-47d6-80a1-b0030806c2ec",
+    "observation_id": "3c1d413d-2362-4188-a815-e308c6e76644",
+    "image_path": "/uploads/observations/3c1d413d-2362-4188-a815-e308c6e76644/zone_3_close_up_5.jpg",
+    "image_type": "close_up",
+    "observation_zone": "zone_3",
+    "original_filename": "close_z3.jpg",
+    "uploaded_at": "2026-09-22T16:02:03.250062+00:00",
+    "disease_prediction": {
+      "prediction": "stripe_rust",
+      "confidence": 43.51
+    },
+    "damage_prediction": null
+  },
+  {
+    "id": "9df1dd72-4d9d-4c6f-a3e2-0cb4efd7f5f0",
+    "observation_id": "3c1d413d-2362-4188-a815-e308c6e76644",
+    "image_path": "/uploads/observations/3c1d413d-2362-4188-a815-e308c6e76644/zone_3_field_view_6.jpg",
+    "image_type": "field_view",
+    "observation_zone": "zone_3",
+    "original_filename": "field_z3.jpg",
+    "uploaded_at": "2026-09-22T16:02:03.250062+00:00",
+    "disease_prediction": null,
+    "damage_prediction": {
+      "damage_percentage": 0.0,
+      "damaged_pixels": 0,
+      "healthy_pixels": 50176,
+      "background_pixels": 0,
+      "mask_path": "D:\\Agri-Vision\\backend\\damage_results\\masks\\obs_3c1d413d_zone_3_field_view_damage_mask.png",
+      "overlay_path": "D:\\Agri-Vision\\backend\\damage_results\\overlays\\obs_3c1d413d_zone_3_field_view_damage_overlay.jpg"
+    }
+  },
+  {
+    "id": "bc43fba1-1ade-43b3-8437-7c2e9db291e2",
+    "observation_id": "3c1d413d-2362-4188-a815-e308c6e76644",
+    "image_path": "/uploads/observations/3c1d413d-2362-4188-a815-e308c6e76644/zone_4_close_up_7.jpg",
+    "image_type": "close_up",
+    "observation_zone": "zone_4",
+    "original_filename": "close_z4.jpg",
+    "uploaded_at": "2026-09-22T16:02:03.250062+00:00",
+    "disease_prediction": {
+      "prediction": "stripe_rust",
+      "confidence": 43.51
+    },
+    "damage_prediction": null
+  },
+  {
+    "id": "dffa3d3a-17fc-4555-8e30-101076737568",
+    "observation_id": "3c1d413d-2362-4188-a815-e308c6e76644",
+    "image_path": "/uploads/observations/3c1d413d-2362-4188-a815-e308c6e76644/zone_4_field_view_8.jpg",
+    "image_type": "field_view",
+    "observation_zone": "zone_4",
+    "original_filename": "field_z4.jpg",
+    "uploaded_at": "2026-09-22T16:02:03.250062+00:00",
+    "disease_prediction": null,
+    "damage_prediction": {
+      "damage_percentage": 0.0,
+      "damaged_pixels": 0,
+      "healthy_pixels": 50176,
+      "background_pixels": 0,
+      "mask_path": "D:\\Agri-Vision\\backend\\damage_results\\masks\\obs_3c1d413d_zone_4_field_view_damage_mask.png",
+      "overlay_path": "D:\\Agri-Vision\\backend\\damage_results\\overlays\\obs_3c1d413d_zone_4_field_view_damage_overlay.jpg"
+    }
+  },
+  {
+    "id": "88b969c6-0765-47d7-9f8b-1fd2fac281a8",
+    "observation_id": "3c1d413d-2362-4188-a815-e308c6e76644",
+    "image_path": "/uploads/observations/3c1d413d-2362-4188-a815-e308c6e76644/zone_5_close_up_9.jpg",
+    "image_type": "close_up",
+    "observation_zone": "zone_5",
+    "original_filename": "close_z5.jpg",
+    "uploaded_at": "2026-09-22T16:02:03.250062+00:00",
+    "disease_prediction": {
+      "prediction": "stripe_rust",
+      "confidence": 43.51
+    },
+    "damage_prediction": null
+  },
+  {
+    "id": "d3972e45-72d4-4e3a-9756-bfa6c178f938",
+    "observation_id": "3c1d413d-2362-4188-a815-e308c6e76644",
+    "image_path": "/uploads/observations/3c1d413d-2362-4188-a815-e308c6e76644/zone_5_field_view_10.jpg",
+    "image_type": "field_view",
+    "observation_zone": "zone_5",
+    "original_filename": "field_z5.jpg",
+    "uploaded_at": "2026-09-22T16:02:03.250062+00:00",
+    "disease_prediction": null,
+    "damage_prediction": {
+      "damage_percentage": 0.0,
+      "damaged_pixels": 0,
+      "healthy_pixels": 50176,
+      "background_pixels": 0,
+      "mask_path": "D:\\Agri-Vision\\backend\\damage_results\\masks\\obs_3c1d413d_zone_5_field_view_damage_mask.png",
+      "overlay_path": "D:\\Agri-Vision\\backend\\damage_results\\overlays\\obs_3c1d413d_zone_5_field_view_damage_overlay.jpg"
+    }
+  },
+  {
+    "id": "9505b46e-f3e1-4c83-86ea-529e2cf1fb16",
+    "observation_id": "5ae5d8f6-05ab-41c6-957c-64016ff91b55",
+    "image_path": "/uploads/observations/5ae5d8f6-05ab-41c6-957c-64016ff91b55/zone_1_close_up_1.jpg",
+    "image_type": "close_up",
+    "observation_zone": "zone_1",
+    "original_filename": "close_z1.jpg",
+    "uploaded_at": "2026-09-22T16:02:06.174899+00:00",
+    "disease_prediction": {
+      "prediction": "stripe_rust",
+      "confidence": 43.51
+    },
+    "damage_prediction": null
+  },
+  {
+    "id": "53666294-eea2-4bda-aaed-f80f451b66e4",
+    "observation_id": "5ae5d8f6-05ab-41c6-957c-64016ff91b55",
+    "image_path": "/uploads/observations/5ae5d8f6-05ab-41c6-957c-64016ff91b55/zone_1_field_view_2.jpg",
+    "image_type": "field_view",
+    "observation_zone": "zone_1",
+    "original_filename": "field_z1.jpg",
+    "uploaded_at": "2026-09-22T16:02:06.174899+00:00",
+    "disease_prediction": null,
+    "damage_prediction": {
+      "damage_percentage": 0.0,
+      "damaged_pixels": 0,
+      "healthy_pixels": 50176,
+      "background_pixels": 0,
+      "mask_path": "D:\\Agri-Vision\\backend\\damage_results\\masks\\obs_5ae5d8f6_zone_1_field_view_damage_mask.png",
+      "overlay_path": "D:\\Agri-Vision\\backend\\damage_results\\overlays\\obs_5ae5d8f6_zone_1_field_view_damage_overlay.jpg"
+    }
+  },
+  {
+    "id": "d48e9350-0415-4135-a06c-fbc8dc75f936",
+    "observation_id": "5ae5d8f6-05ab-41c6-957c-64016ff91b55",
+    "image_path": "/uploads/observations/5ae5d8f6-05ab-41c6-957c-64016ff91b55/zone_2_close_up_3.jpg",
+    "image_type": "close_up",
+    "observation_zone": "zone_2",
+    "original_filename": "close_z2.jpg",
+    "uploaded_at": "2026-09-22T16:02:06.174899+00:00",
+    "disease_prediction": {
+      "prediction": "stripe_rust",
+      "confidence": 43.51
+    },
+    "damage_prediction": null
+  },
+  {
+    "id": "bdc1f12e-15b1-4fbe-b837-bc0bd368c409",
+    "observation_id": "5ae5d8f6-05ab-41c6-957c-64016ff91b55",
+    "image_path": "/uploads/observations/5ae5d8f6-05ab-41c6-957c-64016ff91b55/zone_2_field_view_4.jpg",
+    "image_type": "field_view",
+    "observation_zone": "zone_2",
+    "original_filename": "field_z2.jpg",
+    "uploaded_at": "2026-09-22T16:02:06.174899+00:00",
+    "disease_prediction": null,
+    "damage_prediction": {
+      "damage_percentage": 0.0,
+      "damaged_pixels": 0,
+      "healthy_pixels": 50176,
+      "background_pixels": 0,
+      "mask_path": "D:\\Agri-Vision\\backend\\damage_results\\masks\\obs_5ae5d8f6_zone_2_field_view_damage_mask.png",
+      "overlay_path": "D:\\Agri-Vision\\backend\\damage_results\\overlays\\obs_5ae5d8f6_zone_2_field_view_damage_overlay.jpg"
+    }
+  },
+  {
+    "id": "5bc4dd8e-a2ea-42e9-89c2-58244afb27dc",
+    "observation_id": "5ae5d8f6-05ab-41c6-957c-64016ff91b55",
+    "image_path": "/uploads/observations/5ae5d8f6-05ab-41c6-957c-64016ff91b55/zone_3_close_up_5.jpg",
+    "image_type": "close_up",
+    "observation_zone": "zone_3",
+    "original_filename": "close_z3.jpg",
+    "uploaded_at": "2026-09-22T16:02:06.174899+00:00",
+    "disease_prediction": {
+      "prediction": "stripe_rust",
+      "confidence": 43.51
+    },
+    "damage_prediction": null
+  },
+  {
+    "id": "8e5fe365-a4c4-4059-bee8-54ed5d9a8e74",
+    "observation_id": "5ae5d8f6-05ab-41c6-957c-64016ff91b55",
+    "image_path": "/uploads/observations/5ae5d8f6-05ab-41c6-957c-64016ff91b55/zone_3_field_view_6.jpg",
+    "image_type": "field_view",
+    "observation_zone": "zone_3",
+    "original_filename": "field_z3.jpg",
+    "uploaded_at": "2026-09-22T16:02:06.174899+00:00",
+    "disease_prediction": null,
+    "damage_prediction": {
+      "damage_percentage": 0.0,
+      "damaged_pixels": 0,
+      "healthy_pixels": 50176,
+      "background_pixels": 0,
+      "mask_path": "D:\\Agri-Vision\\backend\\damage_results\\masks\\obs_5ae5d8f6_zone_3_field_view_damage_mask.png",
+      "overlay_path": "D:\\Agri-Vision\\backend\\damage_results\\overlays\\obs_5ae5d8f6_zone_3_field_view_damage_overlay.jpg"
+    }
+  },
+  {
+    "id": "016804e9-baa7-4efd-8ff8-054d208e981d",
+    "observation_id": "5ae5d8f6-05ab-41c6-957c-64016ff91b55",
+    "image_path": "/uploads/observations/5ae5d8f6-05ab-41c6-957c-64016ff91b55/zone_4_close_up_7.jpg",
+    "image_type": "close_up",
+    "observation_zone": "zone_4",
+    "original_filename": "close_z4.jpg",
+    "uploaded_at": "2026-09-22T16:02:06.174899+00:00",
+    "disease_prediction": {
+      "prediction": "stripe_rust",
+      "confidence": 43.51
+    },
+    "damage_prediction": null
+  },
+  {
+    "id": "699bb545-04e4-49b2-93f5-c1babe1bd8f1",
+    "observation_id": "5ae5d8f6-05ab-41c6-957c-64016ff91b55",
+    "image_path": "/uploads/observations/5ae5d8f6-05ab-41c6-957c-64016ff91b55/zone_4_field_view_8.jpg",
+    "image_type": "field_view",
+    "observation_zone": "zone_4",
+    "original_filename": "field_z4.jpg",
+    "uploaded_at": "2026-09-22T16:02:06.174899+00:00",
+    "disease_prediction": null,
+    "damage_prediction": {
+      "damage_percentage": 0.0,
+      "damaged_pixels": 0,
+      "healthy_pixels": 50176,
+      "background_pixels": 0,
+      "mask_path": "D:\\Agri-Vision\\backend\\damage_results\\masks\\obs_5ae5d8f6_zone_4_field_view_damage_mask.png",
+      "overlay_path": "D:\\Agri-Vision\\backend\\damage_results\\overlays\\obs_5ae5d8f6_zone_4_field_view_damage_overlay.jpg"
+    }
+  },
+  {
+    "id": "91652162-b465-4733-9753-0bbed9aa92d7",
+    "observation_id": "5ae5d8f6-05ab-41c6-957c-64016ff91b55",
+    "image_path": "/uploads/observations/5ae5d8f6-05ab-41c6-957c-64016ff91b55/zone_5_close_up_9.jpg",
+    "image_type": "close_up",
+    "observation_zone": "zone_5",
+    "original_filename": "close_z5.jpg",
+    "uploaded_at": "2026-09-22T16:02:06.174899+00:00",
+    "disease_prediction": {
+      "prediction": "stripe_rust",
+      "confidence": 43.51
+    },
+    "damage_prediction": null
+  },
+  {
+    "id": "7f9dddc2-c49b-4ed7-9e63-ac23a5c5acfc",
+    "observation_id": "5ae5d8f6-05ab-41c6-957c-64016ff91b55",
+    "image_path": "/uploads/observations/5ae5d8f6-05ab-41c6-957c-64016ff91b55/zone_5_field_view_10.jpg",
+    "image_type": "field_view",
+    "observation_zone": "zone_5",
+    "original_filename": "field_z5.jpg",
+    "uploaded_at": "2026-09-22T16:02:06.174899+00:00",
+    "disease_prediction": null,
+    "damage_prediction": {
+      "damage_percentage": 0.0,
+      "damaged_pixels": 0,
+      "healthy_pixels": 50176,
+      "background_pixels": 0,
+      "mask_path": "D:\\Agri-Vision\\backend\\damage_results\\masks\\obs_5ae5d8f6_zone_5_field_view_damage_mask.png",
+      "overlay_path": "D:\\Agri-Vision\\backend\\damage_results\\overlays\\obs_5ae5d8f6_zone_5_field_view_damage_overlay.jpg"
+    }
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "11111111-2222-3333-4444-555555555501": {
+    "id": "11111111-2222-3333-4444-555555555501",
+    "officer_code": "OFFICER-409",
+    "full_name": "Adjuster J. Smith",
+    "badge_number": "#409",
+    "email": "j.smith@agri-vision.gov",
+    "role": "Senior Claims Adjuster",
+    "department": "National Crop Insurance Auditing Directorate",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "password_hash": "633ab9bde6b6de9915652c2da719db0f$83bb1c2d28836c6d106c86ff427ffc264ff0077f7006d19e0d8bc8310a29a32d",
+    "created_at": "2026-10-12T17:22:10.135998+00:00"
+  },
+  "11111111-2222-3333-4444-555555555502": {
+    "id": "11111111-2222-3333-4444-555555555502",
+    "officer_code": "OFF-TN-108",
+    "full_name": "Dr. Priya Sharma",
+    "badge_number": "#108",
+    "email": "priya.sharma@agri-vision.gov",
+    "role": "Field Agronomist & Loss Assessor",
+    "department": "Field Claims & Satellite Ground-Truth Division",
+    "district": "Coimbatore",
+    "state": "Tamil Nadu",
+    "password_hash": "0eca81211188fa89a7dc27c893e9cfca$9780d800641597f0bab29db1025c3cf16dfca4ccc981db567d1d4f9ef6bc17e6",
+    "created_at": "2026-10-12T17:22:10.135998+00:00"
+  },
+  "11111111-2222-3333-4444-555555555503": {
+    "id": "11111111-2222-3333-4444-555555555503",
+    "officer_code": "OFF-PB-722",
+    "full_name": "Inspector R. Kumar",
+    "badge_number": "#722",
+    "email": "r.kumar@agri-vision.gov",
+    "role": "Regional Risk & Audit Officer",
+    "department": "Northern Zone Crop Insurance Oversight Unit",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "password_hash": "d83292c710872a3bf473d949e3b9924f$924ffa009c0e7018309f6b49bdf57e373f3101c25ad97e40f066dbe5940118de",
+    "created_at": "2026-10-12T17:22:10.135998+00:00"
+  }
+}

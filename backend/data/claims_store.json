@@ -1,0 +1,226 @@
+{
+  "5d4ab7bf-08ce-4013-bc0c-54f6cc75d110": {
+    "claim_id": "5d4ab7bf-08ce-4013-bc0c-54f6cc75d110",
+    "created_at": "2026-09-22T16:02:02.988954+00:00",
+    "ai_evidence": {
+      "farmer_name": "Claimant Farmer",
+      "farmer_id": "FARMER-2026-714123",
+      "farm_name": "Patiala Plot",
+      "crop_variety": "Wheat",
+      "db_farmer_id": "5e235a91-8e8d-49aa-9df8-c5087d0af230",
+      "db_farm_id": "37c22b3d-8958-4957-b350-8997a7515c5b",
+      "farmer_code": "FARMER-2026-714123",
+      "farm_code": "FARM-2026-854491",
+      "disease_analysis": {
+        "overall_confidence": 90.0,
+        "final_prediction": "Septoria"
+      },
+      "damage_analysis": {
+        "overall_damage_percentage": 35.0
+      },
+      "claim_id": "5d4ab7bf-08ce-4013-bc0c-54f6cc75d110",
+      "created_at": "2026-09-22T16:02:02.988954+00:00",
+      "evidence_score": {
+        "total_score": 56,
+        "max_score": 100,
+        "breakdown": {
+          "disease_evidence": {
+            "score": 30,
+            "max": 30
+          },
+          "location_verification": {
+            "score": 0,
+            "max": 20
+          },
+          "image_requirements": {
+            "score": 5,
+            "max": 15
+          },
+          "prediction_consistency": {
+            "score": 5,
+            "max": 15
+          },
+          "visible_damage_support": {
+            "score": 15,
+            "max": 15
+          },
+          "metadata_completeness": {
+            "score": 1,
+            "max": 5
+          }
+        }
+      }
+    },
+    "officer_verification": {
+      "officer_name": "Adjuster J. Smith (#409)",
+      "final_decision": "rejected",
+      "notes": "location mismatch\n",
+      "verified_at": "2026-09-22T17:27:36.772142+00:00"
+    }
+  },
+  "79c47b09-8ef2-4dcb-80bc-74a6bd0752de": {
+    "claim_id": "79c47b09-8ef2-4dcb-80bc-74a6bd0752de",
+    "created_at": "2026-09-22T16:02:07.096991+00:00",
+    "ai_evidence": {
+      "farmer_name": "Farmer Alice",
+      "farmer_id": "FARMER-2026-537057",
+      "farm_name": "Farm A Wheat Parcel",
+      "crop_variety": "Durum Wheat",
+      "farm_latitude": 30.901,
+      "farm_longitude": 75.8573,
+      "claim_latitude": 30.9015,
+      "claim_longitude": 75.8578,
+      "location_source": "Browser GPS",
+      "disease_analysis": {
+        "final_prediction": "Septoria",
+        "overall_confidence": 88.0
+      },
+      "damage_analysis": {
+        "overall_damage_percentage": 25.0
+      },
+      "close_up_images": [],
+      "field_images": [],
+      "exif_metadata": {},
+      "db_farmer_id": "b4a575b5-6918-4ba8-bf2d-f60835408c2c",
+      "db_farm_id": "d5663bc4-3c66-4e40-ad97-181c3aa8f1da",
+      "farmer_code": "FARMER-2026-537057",
+      "farm_code": "FARM-2026-705031",
+      "farmer_profile": {
+        "id": "b4a575b5-6918-4ba8-bf2d-f60835408c2c",
+        "farmer_code": "FARMER-2026-537057",
+        "full_name": "Farmer Alice",
+        "mobile_number": "9110674493",
+        "email": null,
+        "address": "Village 1",
+        "district": "Ludhiana",
+        "state": "Punjab",
+        "password_hash": "38e062d1b77912d32c24b3f85578084d$fdfa1fc23523cfb46aa477eca18f3814d47f5659f7719aac6f9418fea91dbcd3",
+        "created_at": "2026-09-22T16:02:03.136147+00:00"
+      },
+      "farm_profile": {
+        "id": "d5663bc4-3c66-4e40-ad97-181c3aa8f1da",
+        "farmer_id": "b4a575b5-6918-4ba8-bf2d-f60835408c2c",
+        "farm_code": "FARM-2026-705031",
+        "crop_type": "Wheat (HD-2967)",
+        "area_acres": 4.0,
+        "survey_number": "SY-001",
+        "latitude": 30.901,
+        "longitude": 75.8573,
+        "created_at": "2026-09-22T16:02:03.182844+00:00"
+      },
+      "location_evidence": {
+        "distance_km": 0.07,
+        "gps_captured": true,
+        "source": "Browser GPS",
+        "farm_location": [
+          30.901,
+          75.8573
+        ],
+        "claim_location": [
+          30.9015,
+          75.8578
+        ],
+        "status": "Within acceptable field region"
+      },
+      "claim_id": "79c47b09-8ef2-4dcb-80bc-74a6bd0752de",
+      "created_at": "2026-09-22T16:02:07.096991+00:00",
+      "evidence_score": {
+        "total_score": 76,
+        "max_score": 100,
+        "breakdown": {
+          "disease_evidence": {
+            "score": 30,
+            "max": 30
+          },
+          "location_verification": {
+            "score": 20,
+            "max": 20
+          },
+          "image_requirements": {
+            "score": 5,
+            "max": 15
+          },
+          "prediction_consistency": {
+            "score": 5,
+            "max": 15
+          },
+          "visible_damage_support": {
+            "score": 15,
+            "max": 15
+          },
+          "metadata_completeness": {
+            "score": 1,
+            "max": 5
+          }
+        }
+      }
+    },
+    "officer_verification": {
+      "officer_name": "Adjuster J. Smith (#409)",
+      "final_decision": "rejected",
+      "notes": "information not available\n",
+      "verified_at": "2026-09-22T17:27:15.684111+00:00"
+    }
+  },
+  "5a2eec7a-1f23-4708-bd90-3c47a0aa2bb0": {
+    "claim_id": "5a2eec7a-1f23-4708-bd90-3c47a0aa2bb0",
+    "created_at": "2026-11-20T14:53:38.551807+00:00",
+    "ai_evidence": {
+      "farmer_name": "Claimant Farmer",
+      "farmer_id": "FARMER-2026-828512",
+      "farm_name": "Patiala Plot",
+      "crop_variety": "Wheat",
+      "db_farmer_id": "2564da7f-1f4f-413b-a0fd-303e2dcb3d23",
+      "db_farm_id": "ed142d97-b751-477a-8da1-736c2902beb5",
+      "farmer_code": "FARMER-2026-828512",
+      "farm_code": "FARM-2026-913502",
+      "disease_analysis": {
+        "overall_confidence": 90.0,
+        "final_prediction": "Septoria"
+      },
+      "damage_analysis": {
+        "overall_damage_percentage": 35.0
+      },
+      "claim_id": "5a2eec7a-1f23-4708-bd90-3c47a0aa2bb0",
+      "created_at": "2026-11-20T14:53:38.551807+00:00",
+      "claim_code": "CLM-2026-913502",
+      "claim_title": "Wheat Septoria Damage Claim",
+      "evidence_score": {
+        "total_score": 72,
+        "max_score": 100,
+        "breakdown": {
+          "disease_evidence": {
+            "score": 30,
+            "max": 30
+          },
+          "location_verification": {
+            "score": 18,
+            "max": 20
+          },
+          "image_requirements": {
+            "score": 0,
+            "max": 15
+          },
+          "prediction_consistency": {
+            "score": 8,
+            "max": 15
+          },
+          "visible_damage_support": {
+            "score": 12,
+            "max": 15
+          },
+          "metadata_completeness": {
+            "score": 4,
+            "max": 5
+          }
+        }
+      }
+    },
+    "officer_verification": {
+      "officer_name": null,
+      "final_decision": "pending_review",
+      "notes": null,
+      "verified_at": null
+    }
+  }
+}

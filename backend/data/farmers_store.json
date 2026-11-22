@@ -1,0 +1,110 @@
+{
+  "7fc118a2-1223-4165-9d7e-12a824683f10": {
+    "id": "7fc118a2-1223-4165-9d7e-12a824683f10",
+    "farmer_code": "FARMER-2026-411962",
+    "full_name": "Test Farmer",
+    "mobile_number": "9990754892",
+    "email": "farmer@test.com",
+    "address": "123 Farm Lane",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "password_hash": "0b56252b9c555aa602042ee98bccb359$3c7579cf411bb3e2cb13c59e298481fa5b1f4f43b9232b16d1027274f44583ed",
+    "created_at": "2026-09-22T16:02:02.723549+00:00"
+  },
+  "c94ad178-5029-4fef-851b-4cb18c4d27b5": {
+    "id": "c94ad178-5029-4fef-851b-4cb18c4d27b5",
+    "farmer_code": "FARMER-2026-218169",
+    "full_name": "Farm Owner",
+    "mobile_number": "9880093065",
+    "email": null,
+    "address": "Village A",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "password_hash": "9e18e3997e18ffd1ce39774f861f7525$9d1cfb2445ec5628807db4c2f60b88d992c029d70d79b3dd94aa02e6843e953f",
+    "created_at": "2026-09-22T16:02:02.880800+00:00"
+  },
+  "5e235a91-8e8d-49aa-9df8-c5087d0af230": {
+    "id": "5e235a91-8e8d-49aa-9df8-c5087d0af230",
+    "farmer_code": "FARMER-2026-714123",
+    "full_name": "Claimant Farmer",
+    "mobile_number": "9770767606",
+    "email": null,
+    "address": "Village B",
+    "district": "Patiala",
+    "state": "Punjab",
+    "password_hash": "7efd4cd037636c1961d6da9bf1c3c241$8539ec0ca5b6601f9d9d518212e32795cbc88fe5383d98abe5aca5d821db3868",
+    "created_at": "2026-09-22T16:02:02.938550+00:00"
+  },
+  "bf9c7026-20b1-4c25-85b2-c6e6951e3894": {
+    "id": "bf9c7026-20b1-4c25-85b2-c6e6951e3894",
+    "farmer_code": "FARMER-2026-103319",
+    "full_name": "API Farmer",
+    "mobile_number": "9660860997",
+    "email": null,
+    "address": "Addr",
+    "district": "Dist",
+    "state": "State",
+    "password_hash": "ac55c2ac444f5a912f93c2805a020d36$10d163d07c4fc452c048aaa8c4de1c4df1c4ff42d24abe07cfcd2eab92a221a2",
+    "created_at": "2026-09-22T16:02:03.017139+00:00"
+  },
+  "b4a575b5-6918-4ba8-bf2d-f60835408c2c": {
+    "id": "b4a575b5-6918-4ba8-bf2d-f60835408c2c",
+    "farmer_code": "FARMER-2026-537057",
+    "full_name": "Farmer Alice",
+    "mobile_number": "9110674493",
+    "email": null,
+    "address": "Village 1",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "password_hash": "38e062d1b77912d32c24b3f85578084d$fdfa1fc23523cfb46aa477eca18f3814d47f5659f7719aac6f9418fea91dbcd3",
+    "created_at": "2026-09-22T16:02:03.136147+00:00"
+  },
+  "f8809e94-b525-43ad-98d4-15a117ab5138": {
+    "id": "f8809e94-b525-43ad-98d4-15a117ab5138",
+    "farmer_code": "FARMER-2026-921876",
+    "full_name": "Farmer Bob",
+    "mobile_number": "9220547276",
+    "email": null,
+    "address": "Village 2",
+    "district": "Patiala",
+    "state": "Punjab",
+    "password_hash": "6f50a5140d8c09af0de96e80bc29026b$f194ef7e7bc16512d857d9cdbea90c188a427820cc7b2020d777bd3993aee47d",
+    "created_at": "2026-09-22T16:02:03.182844+00:00"
+  },
+  "9a8d02a1-a14c-44a8-9dfe-511fb51dc3b3": {
+    "id": "9a8d02a1-a14c-44a8-9dfe-511fb51dc3b3",
+    "farmer_code": "FARMER-2026-643475",
+    "full_name": "Test Farmer",
+    "mobile_number": "9990733858",
+    "email": "farmer@test.com",
+    "address": "123 Farm Lane",
+    "district": "Ludhiana",
+    "state": "Punjab",
+    "password_hash": "1552d627c0ee94ef1eff368370142e8f$66368b71e70f9bb03034b62c7ff4ebceafd7fddc60e5699fd5f43185186317d6",
+    "created_at": "2026-11-20T14:53:37.302321+00:00"
+  },
+  "d0f56e57-9044-4479-a691-9f8c332d2106": {
+    "id": "d0f56e57-9044-4479-a691-9f8c332d2106",
+    "farmer_code": "FARMER-2026-297411",
+    "full_name": "Farm Owner",
+    "mobile_number": "9880973181",
+    "email": null,
+    "address": "Village A",
+    "district": "Amritsar",
+    "state": "Punjab",
+    "password_hash": "4667c05fb9c66beec997ba34a46a0a0f$e4e537f986901f2c7b4e389f61d30ccca27a30461366bb9570e93f3237400f44",
+    "created_at": "2026-11-20T14:53:37.915773+00:00"
+  },
+  "2564da7f-1f4f-413b-a0fd-303e2dcb3d23": {
+    "id": "2564da7f-1f4f-413b-a0fd-303e2dcb3d23",
+    "farmer_code": "FARMER-2026-828512",
+    "full_name": "Claimant Farmer",
+    "mobile_number": "9770597704",
+    "email": null,
+    "address": "Village B",
+    "district": "Patiala",
+    "state": "Punjab",
+    "password_hash": "af787788599bc3dd0e816a66a35d00b1$e624f525e0939129f7c0980f4d761f9fe4bfb777b401415d9c0055d6269e6059",
+    "created_at": "2026-11-20T14:53:38.326103+00:00"
+  }
+}

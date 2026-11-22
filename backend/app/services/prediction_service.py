@@ -1,4 +1,3 @@
-import json
 from pathlib import Path
 
 import numpy as np
@@ -9,44 +8,32 @@ from tensorflow.keras.models import load_model
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
-MODEL_PATH = PROJECT_ROOT / "ml" / "final_wheat_inference_model.keras"
-CLASS_NAMES_PATH = PROJECT_ROOT / "ml" / "class_names.json"
-
-
-def load_class_names() -> list[str]:
-    """
-    Read and return the class names stored in class_names.json.
-    """
-
-    if not CLASS_NAMES_PATH.exists():
-        raise FileNotFoundError(
-            f"Class names file was not found: {CLASS_NAMES_PATH}"
-        )
-
-    with CLASS_NAMES_PATH.open("r", encoding="utf-8") as file:
-        class_names = json.load(file)
-
-    if not isinstance(class_names, list) or not class_names:
-        raise ValueError(
-            "class_names.json must contain a non-empty JSON list."
-        )
-
-    return class_names
+# This is the sole approved disease checkpoint for production inference.
+MODEL_PATH = PROJECT_ROOT / "models" / "final_wheat_inference_model.keras"
+CLASS_NAMES = ["Healthy", "septoria", "stripe_rust"]
 
 
 if not MODEL_PATH.exists():
     raise FileNotFoundError(
-        f"Trained model file was not found: {MODEL_PATH}"
+        f"Approved disease model was not found: {MODEL_PATH}"
     )
 
 
-print(f"Loading trained model from: {MODEL_PATH}")
+print(f"Loading approved disease model from: {MODEL_PATH}")
 
-model = load_model(MODEL_PATH)
-class_names = load_class_names()
+model = load_model(MODEL_PATH, compile=False)
 
-print("Trained model loaded successfully.")
-print(f"Available classes: {class_names}")
+if model.input_shape != (None, 224, 224, 3):
+    raise ValueError(
+        f"Unexpected disease model input shape: {model.input_shape}"
+    )
+
+if model.output_shape != (None, 3):
+    raise ValueError(
+        f"Unexpected disease model output shape: {model.output_shape}"
+    )
+
+print("Approved disease model loaded successfully.")
 
 
 def predict_image(image_path: str | Path) -> dict:
@@ -75,12 +62,12 @@ def predict_image(image_path: str | Path) -> dict:
     predicted_index = int(np.argmax(predictions[0]))
     confidence = float(predictions[0][predicted_index]) * 100
 
-    if predicted_index >= len(class_names):
+    if predicted_index >= len(CLASS_NAMES):
         raise ValueError(
             "The model output does not match the number of class names."
         )
 
     return {
-        "prediction": class_names[predicted_index],
+        "prediction": CLASS_NAMES[predicted_index],
         "confidence": round(confidence, 2),
     }

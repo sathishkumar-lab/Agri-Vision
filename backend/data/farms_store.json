@@ -1,0 +1,112 @@
+{
+  "f6367a15-7ef6-41e7-b6f6-cc1b94c7d8c1": {
+    "id": "f6367a15-7ef6-41e7-b6f6-cc1b94c7d8c1",
+    "farmer_id": "c94ad178-5029-4fef-851b-4cb18c4d27b5",
+    "farm_code": "FARM-2026-876622",
+    "crop_type": "Durum Wheat",
+    "area_acres": 4.5,
+    "survey_number": "SY-102",
+    "latitude": 31.634,
+    "longitude": 74.8723,
+    "created_at": "2026-09-22T16:02:02.929220+00:00"
+  },
+  "37c22b3d-8958-4957-b350-8997a7515c5b": {
+    "id": "37c22b3d-8958-4957-b350-8997a7515c5b",
+    "farmer_id": "5e235a91-8e8d-49aa-9df8-c5087d0af230",
+    "farm_code": "FARM-2026-854491",
+    "crop_type": "Wheat",
+    "area_acres": 10.0,
+    "survey_number": null,
+    "latitude": 30.3398,
+    "longitude": 76.3869,
+    "created_at": "2026-09-22T16:02:02.988416+00:00"
+  },
+  "393fcf82-8567-4be8-8e2b-243b7fbd3707": {
+    "id": "393fcf82-8567-4be8-8e2b-243b7fbd3707",
+    "farmer_id": "bf9c7026-20b1-4c25-85b2-c6e6951e3894",
+    "farm_code": "FARM-2026-372837",
+    "crop_type": "Durum Wheat",
+    "area_acres": 6.2,
+    "survey_number": "777",
+    "latitude": 31.0,
+    "longitude": 75.0,
+    "created_at": "2026-09-22T16:02:03.109303+00:00"
+  },
+  "d5663bc4-3c66-4e40-ad97-181c3aa8f1da": {
+    "id": "d5663bc4-3c66-4e40-ad97-181c3aa8f1da",
+    "farmer_id": "b4a575b5-6918-4ba8-bf2d-f60835408c2c",
+    "farm_code": "FARM-2026-705031",
+    "crop_type": "Wheat (HD-2967)",
+    "area_acres": 4.0,
+    "survey_number": "SY-001",
+    "latitude": 30.901,
+    "longitude": 75.8573,
+    "created_at": "2026-09-22T16:02:03.182844+00:00"
+  },
+  "75531d7e-a3c2-417a-be86-6360b3bde1c2": {
+    "id": "75531d7e-a3c2-417a-be86-6360b3bde1c2",
+    "farmer_id": "f8809e94-b525-43ad-98d4-15a117ab5138",
+    "farm_code": "FARM-2026-209564",
+    "crop_type": "Durum Wheat",
+    "area_acres": 2.5,
+    "survey_number": "SY-002",
+    "latitude": 30.3398,
+    "longitude": 76.3869,
+    "created_at": "2026-09-22T16:02:03.229976+00:00"
+  },
+  "9e2e638a-a019-4c7d-bdc4-8c12e1a4c873": {
+    "id": "9e2e638a-a019-4c7d-bdc4-8c12e1a4c873",
+    "farmer_id": "47236afb-37f1-4abe-9f46-f7788dc827ed",
+    "farm_code": "FARM-2026-520268",
+    "crop_type": "Durum Wheat (HD-2967)",
+    "area_acres": 1.0,
+    "survey_number": "142/2",
+    "latitude": 11.036472,
+    "longitude": 77.041808,
+    "created_at": "2026-09-22T16:05:43.838494+00:00"
+  },
+  "bd9d9839-5d60-41ba-8f6b-90e044972cc8": {
+    "id": "bd9d9839-5d60-41ba-8f6b-90e044972cc8",
+    "farmer_id": "47236afb-37f1-4abe-9f46-f7788dc827ed",
+    "farm_code": "FARM-2026-978816",
+    "crop_type": "Durum Wheat (HD-2967)",
+    "area_acres": 5.0,
+    "survey_number": null,
+    "latitude": 31.5204,
+    "longitude": 74.3587,
+    "created_at": "2026-09-22T16:05:55.555224+00:00"
+  },
+  "99a23f3f-c37d-455b-8c86-a44a36dd4d74": {
+    "id": "99a23f3f-c37d-455b-8c86-a44a36dd4d74",
+    "farmer_id": "47236afb-37f1-4abe-9f46-f7788dc827ed",
+    "farm_code": "FARM-2026-182571",
+    "crop_type": "Durum Wheat (HD-2967)",
+    "area_acres": 1.0,
+    "survey_number": "142/2",
+    "latitude": 11.036454,
+    "longitude": 77.041832,
+    "created_at": "2026-09-22T16:06:16.340491+00:00"
+  },
+  "6223f9c6-5346-4a08-b869-373991cfadc9": {
+    "id": "6223f9c6-5346-4a08-b869-373991cfadc9",
+    "farmer_id": "d0f56e57-9044-4479-a691-9f8c332d2106",
+    "farm_code": "FARM-2026-397552",
+    "crop_type": "Durum Wheat",
+    "area_acres": 4.5,
+    "survey_number": "SY-102",
+    "latitude": 31.634,
+    "longitude": 74.8723,
+    "created_at": "2026-11-20T14:53:38.110181+00:00"
+  },
+  "ed142d97-b751-477a-8da1-736c2902beb5": {
+    "id": "ed142d97-b751-477a-8da1-736c2902beb5",
+    "farmer_id": "2564da7f-1f4f-413b-a0fd-303e2dcb3d23",
+    "farm_code": "FARM-2026-913502",
+    "crop_type": "Wheat",
+    "area_acres": 10.0,
+    "survey_number": null,
+    "latitude": 30.3398,
+    "longitude": 76.3869,
+    "created_at": "2026-11-20T14:53:38.498807+00:00"
+  }
+}
