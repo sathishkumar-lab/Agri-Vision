@@ -1,23 +1,60 @@
-# Python virtual environment
+# Virtual environments
 .venv/
+venv/
+env/
 
-# Python cache
+# Python cache & compiled artifacts
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
 
-# Environment variables
+# Environment secrets
 .env
+.env.local
+.env.*.local
 
-# Uploaded files
-uploads/
+# Node.js & Next.js build artifacts
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
 
-# Operating system files
-.DS_Store
-Thumbs.db
-
-# Colab dataset
+# Large machine learning datasets, batches & raw archives
+NWRD/
 wheat_leaf/
+ml/**/datasets/
+ml/**/dataset/
+ml/**/dataset_split/
+ml/**/synthetic_dataset/
+ml/**/backup_checkpoint0/
+ml/**/samples/
+ml/damage_segmentation/option*
+ml/damage_segmentation/results/
+ml/damage_segmentation/models/experiment_*
+ml/damage_segmentation/models/option*
+scratch/
+*.zip
 
-# Generated image files
+# Oversized neural network weights (>50MB)
+backend/models/*.keras
+ml/**/option10/*.keras
+ml/**/experiments/**/*.keras
+
+# Runtime generated files & uploads
+uploads/
+processed_images/
 backend/uploads/
 backend/processed_images/
+backend/damage_results/
+
+# Operating system & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
